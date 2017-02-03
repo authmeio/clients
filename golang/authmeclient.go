@@ -65,16 +65,13 @@ func NewAuthmeClientWithApiKey(endPoint string, apiKey string) AuthmeClientInter
 }
 
 func (ac *AuthmeClient) GetOrder(referenceId  string) (Order, error) {
-    log.Printf("Authme end point: " + ac.endPoint)
 
     url := ac.endPoint + "/order/" + referenceId
-    log.Printf("Request url: %s", url)
     response, err := http.Get(url)
     if err != nil {
         return Order{}, err
     }
     content, err := ioutil.ReadAll(response.Body)
-    log.Printf("Get order response: %s", content)
     var order Order
     json.Unmarshal(content, &order)
     return order, err
