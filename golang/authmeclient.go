@@ -6,7 +6,6 @@ import (
     "encoding/json"
     "io/ioutil"
     "bytes"
-    "log"
     "errors"
 )
 
