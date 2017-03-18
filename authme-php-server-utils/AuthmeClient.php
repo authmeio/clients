@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: artpar
- * Date: 18/3/17
- * Time: 3:34 PM
- */
+
 
 namespace authme;
 

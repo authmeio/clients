@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: artpar
- * Date: 18/3/17
- * Time: 3:37 PM
- */
 
 namespace authme;
 require "AuthmeClient.php";
